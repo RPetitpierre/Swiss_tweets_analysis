@@ -2,6 +2,8 @@
 Created on Mar 16, 2019
 
 @author: tphan@idiap.ch
+
+modif. RPetitpierre
 '''
 from __future__ import unicode_literals
 from twitter import Api
@@ -10,15 +12,15 @@ import os, sys
 import json
           
 
-consumer_key='c8LX5nBbfAbs30J9EIGAfMgjx'
-consumer_secret='Exzp2n46dQP5gN29plm2rAYjeal5i182shTCwgnLpFgcFK9v4N'
-resource_owner_key='2380467042-03tndCSr9CJh8B9DLkpx568qrMolfRQoAOqCJlP'
-resource_owner_secret='kkf5aSXFyOIY55DWATMJ4wwySaco01RIbAREfpzkzagRA'
+consumer_key=None
+consumer_secret=None
+resource_owner_key=None
+resource_owner_secret=None
 
 api = Api(consumer_key=consumer_key,
-				   consumer_secret=consumer_secret,
-				   access_token_key=resource_owner_key,
-				   access_token_secret=resource_owner_secret)
+			consumer_secret=consumer_secret,
+			access_token_key=resource_owner_key,
+			access_token_secret=resource_owner_secret)
 
 
 if __name__ == '__main__':
